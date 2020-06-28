@@ -7,12 +7,15 @@ https://cassandra.apache.org/download/
 
 #Create KeySpace 
 Create keySpace and configure in the application.properties file
+  ```sql
+  CREATE KEYSPACE WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+  ```
 
 #Cretate Table
 Create table in newly created keyspace.
   #Schema
   ```sql
-   use <KEYSPACE>;
+   use KEYSPACE;
     CREATE TABLE user (
       id timeuuid PRIMARY KEY,
       age int,
