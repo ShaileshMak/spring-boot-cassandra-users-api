@@ -11,6 +11,7 @@ Create keySpace and configure in the application.properties file
 #Cretate Table
 Create table in newly created keyspace.
   #Schema
+  ```sql
    use <KEYSPACE>;
     CREATE TABLE user (
       id timeuuid PRIMARY KEY,
