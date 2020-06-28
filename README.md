@@ -20,7 +20,7 @@ Create table in newly created keyspace.
       firstname text,
       lastname text
     )
-
+   ```
 #Start the Cassandra Instance
 Use the step mention in this link https://docs.datastax.com/en/cql-oss/3.3/cql/cql_using/startCqlLinuxMac.html
 
